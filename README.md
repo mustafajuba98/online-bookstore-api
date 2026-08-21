@@ -14,3 +14,11 @@ python manage.py runserver
 ```
 
 Swagger UI: `http://127.0.0.1:8000/api/docs/`
+
+Auth (public):
+
+- `POST /api/auth/register/`
+- `POST /api/auth/login/`
+- `POST /api/auth/refresh/`
+
+Send `Authorization: Bearer <access>` on every other API request.
