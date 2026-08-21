@@ -22,3 +22,8 @@ Auth (public):
 - `POST /api/auth/refresh/`
 
 Send `Authorization: Bearer <access>` on every other API request.
+
+Books:
+
+- `GET /api/books/` — paginated list (`page`, optional `search`)
+- `GET /api/books/<id>/` — details and full content
