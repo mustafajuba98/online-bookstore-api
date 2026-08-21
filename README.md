@@ -1,3 +1,16 @@
 # Online Book Store API
 
 Django REST API for a virtual bookstore: users can register, browse books, and submit reviews.
+
+## Setup
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+copy .env.example .env
+python manage.py migrate
+python manage.py runserver
+```
+
+Swagger UI: `http://127.0.0.1:8000/api/docs/`
